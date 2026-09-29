@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Recordatorios Cantos</title>
+  <meta name="theme-color" content="#1a1433">
+  <meta name="description" content="Recordatorios de cantos para cada sábado">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon-192.png">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Cantos">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <h1>🎵 Recordatorios Cantos</h1>
+    </header>
+
+    <section class="card hero" id="proximo" aria-live="polite">
+      <p class="label">Próximo turno</p>
+      <p class="fecha" id="fecha">📅 …</p>
+      <div class="people" id="personas"></div>
+    </section>
+
+    <section class="card" id="bloque-envio">
+      <p class="label">📝 Mensaje</p>
+      <blockquote id="mensaje"></blockquote>
+      <p class="hint" id="hint-mensaje">Cada persona recibe su propio mensaje con su nombre.</p>
+
+      <ul class="status" id="estado"></ul>
+
+      <button class="cta" id="btn-enviar" type="button">📲 ENVIAR RECORDATORIOS</button>
+      <p class="aviso" id="aviso" role="status"></p>
+      <button class="ghost" id="btn-reiniciar" type="button">↩️ Reiniciar estado</button>
+    </section>
+
+    <section class="card" id="bloque-lista">
+      <p class="label">📌 Próximos turnos</p>
+      <ul class="lista" id="lista"></ul>
+    </section>
+
+    <section class="card vacio" id="sin-turnos" hidden>
+      <p class="label">🎶 Sin turnos</p>
+      <p>No hay más turnos cargados. Agregalos en <code>TURNOS</code> dentro de <code>script.js</code>.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
