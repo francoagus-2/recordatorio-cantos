@@ -1,4 +1,4 @@
-const CACHE = "cantos-v1";
+const CACHE = "cantos-v3";
 const ARCHIVOS = ["./", "./index.html", "./style.css", "./script.js", "./manifest.json", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png"];
 
 self.addEventListener("install", e => {
